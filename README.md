@@ -1,40 +1,242 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Inventory & Warehouse Management System
 
-## Getting Started
+A modern enterprise-level Inventory & Warehouse Management System built using **Next.js 15**, **TypeScript**, **PostgreSQL**, **Prisma**, and **GraphQL**.
 
-First, run the development server:
+This application helps organizations efficiently manage products, warehouses, suppliers, purchase orders, sales orders, inventory transactions, stock alerts, and business analytics through a centralized dashboard.
+
+---
+
+## Project Overview
+
+The Smart Inventory & Warehouse Management System is designed to streamline inventory operations and warehouse management processes.
+
+The system provides real-time inventory visibility, supplier management, order processing, stock monitoring, reporting, and audit tracking, helping businesses improve operational efficiency and reduce inventory-related issues.
+
+---
+
+## Features
+
+### Authentication & Authorization
+
+* User Registration
+* Secure Login & Logout
+* JWT Authentication
+* Password Hashing
+* Role-Based Access Control
+
+### Product Management
+
+* Create Products
+* Update Products
+* Delete Products
+* Product Categories
+* SKU Management
+* Product Search & Filtering
+
+### Warehouse Management
+
+* Multiple Warehouse Support
+* Warehouse Capacity Management
+* Product Allocation
+* Warehouse Tracking
+
+### Supplier Management
+
+* Supplier Registration
+* Supplier Information Management
+* Purchase History Tracking
+
+### Purchase Order Management
+
+* Create Purchase Orders
+* Approve Purchase Orders
+* Receive Inventory
+* Order Status Tracking
+
+### Sales Order Management
+
+* Create Sales Orders
+* Customer Information Management
+* Automatic Inventory Deduction
+* Order Tracking
+
+### Inventory Tracking
+
+* Real-Time Inventory Monitoring
+* Inventory Transactions
+* Stock Movement History
+* Incoming & Outgoing Stock Tracking
+
+### Stock Alert System
+
+* Low Stock Alerts
+* Out-of-Stock Notifications
+* Inventory Threshold Monitoring
+
+### Dashboard & Analytics
+
+* Total Products
+* Total Warehouses
+* Total Suppliers
+* Total Orders
+* Inventory Statistics
+* Business Analytics
+
+### Reports
+
+* Inventory Reports
+* Sales Reports
+* Supplier Reports
+* Warehouse Reports
+* CSV Export
+* Excel Export
+
+### Audit Logs
+
+* User Activity Tracking
+* Inventory Change Logs
+* Order Activity Logs
+* System Audit Records
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Next.js 15
+* TypeScript
+* Tailwind CSS
+* Apollo Client
+
+### Backend
+
+* GraphQL
+* Next.js Route Handlers
+
+### Database
+
+* PostgreSQL
+* Prisma ORM
+
+### Authentication
+
+* JWT Authentication
+* bcrypt Password Hashing
+
+---
+
+## System Modules
+
+1. Authentication & Authorization
+2. Product Management
+3. Warehouse Management
+4. Supplier Management
+5. Purchase Order Management
+6. Sales Order Management
+7. Inventory Tracking
+8. Stock Alert System
+9. Dashboard & Analytics
+10. Reports Management
+11. Audit Logs
+12. User & Role Management
+
+---
+
+## Database Models
+
+* Users
+* Roles
+* Products
+* Categories
+* Warehouses
+* Suppliers
+* Purchase Orders
+* Purchase Order Items
+* Sales Orders
+* Sales Order Items
+* Inventory Transactions
+* Stock Alerts
+* Audit Logs
+
+---
+
+## Key Business Workflow
+
+Supplier
+→ Purchase Order
+→ Warehouse
+→ Inventory
+→ Sales Order
+→ Customer
+
+The system automatically updates inventory quantities and maintains transaction records throughout the workflow.
+
+---
+
+## Security Features
+
+* JWT Authentication
+* Role-Based Authorization
+* Protected Routes
+* Secure Password Storage
+* Input Validation
+* GraphQL Authorization Guards
+
+---
+
+## Project Goals
+
+* Improve inventory visibility
+* Reduce stock shortages
+* Simplify warehouse operations
+* Automate inventory workflows
+* Generate business insights
+* Maintain audit trails
+* Support scalable business operations
+
+---
+
+## Installation
 
 ```bash
+git clone <repository-url>
+
+cd inventory-warehouse-management-system
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env` file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+DATABASE_URL=
+JWT_SECRET=
+NEXTAUTH_SECRET=
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Future Enhancements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Barcode Integration
+* QR Code Tracking
+* Email Notifications
+* Multi-Warehouse Analytics
+* AI-Based Demand Forecasting
+* Mobile Application
+* Real-Time Notifications
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Authors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jagadeesh R ,Indra Priyadharshini V(Team Novatrix)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KxfKnrQ3)
->>>>>>> 5853f8335c8e30761bc1f0bc84a200405754fd98
+Full Stack Development
+
+Built with Next.js, TypeScript, PostgreSQL, Prisma, and GraphQL.
